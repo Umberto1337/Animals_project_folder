@@ -17,13 +17,3 @@ class Counter:
             print("Исключение обработано:", exc_type, exc_value)
         else:
             print("Ресурс успешно освобожден")
-
-
-# # Пример использования счетчика в блоке try-with-resources
-# try:
-#     with Counter() as counter:
-#         # Ваш код здесь
-#         print("Завести новое животное")  # Пример действия
-#         counter.add()
-# except Exception as e:
-#     print("Произошло исключение:", e)

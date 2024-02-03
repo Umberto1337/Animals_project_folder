@@ -13,7 +13,7 @@ def main():
         if choice == "1":
             pet_type = int(input("Введите тип животного (1 - Cat, 2 - Dog, 3 - Hamster): "))
             name = input("Введите имя животного: ")
-            birthday = datetime.now()  # Можно изменить на ввод реальной даты
+            birthday = datetime.now()
             registry.add_pet(pet_type, name, birthday)
             print("Животное добавлено в реестр.")
 
