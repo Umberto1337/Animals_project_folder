@@ -1,5 +1,5 @@
-from pet import Pet
-from creator import Creator
+from Model.pet import Pet
+from Model.creator import Creator
 from abc import ABC, abstractmethod
 from datetime import datetime
 

@@ -34,6 +34,9 @@ def main():
             print(result)
 
         elif choice == "5":
+            registry.display_pet_registry()
+        
+        elif choice == "6":
             print("Выход из программы.")
             break
 
@@ -41,6 +44,7 @@ def main():
             print("Неверный ввод. Пожалуйста, выберите действие от 1 до 5.")
 
 if __name__ == "__main__":
+    # main() закомментировал, да бы сработал блок с try-except
     registry = PetRegistry()
     counter = Counter()
 
