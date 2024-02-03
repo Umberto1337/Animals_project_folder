@@ -41,4 +41,18 @@ def main():
             print("Неверный ввод. Пожалуйста, выберите действие от 1 до 5.")
 
 if __name__ == "__main__":
-    main()
+    registry = PetRegistry()
+    counter = Counter()
+
+    try:
+        with counter:
+            pet_type = int(input("Введите тип животного (1 - Cat, 2 - Dog, 3 - Hamster): "))
+            name = input("Введите имя животного: ")
+            birthday = datetime.now()
+
+            registry.add_pet(pet_type, name, birthday)
+            print("Животное добавлено в реестр.")
+            counter.add()
+
+    except Exception as e:
+        print("Произошло исключение:", e)
